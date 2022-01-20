@@ -1,0 +1,12 @@
+{
+  "name": "com.calci.firstpass",
+  "displayName": "Essential Codes",
+  "version": "1.0.0",
+  "description": "basic scripts to develop with unity",
+  "keywords": [
+    "unity",
+    "script"
+  ],
+  "author": "seonghwan-dev",
+  "license": "MIT"
+}

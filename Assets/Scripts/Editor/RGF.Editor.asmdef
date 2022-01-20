@@ -1,0 +1,19 @@
+{
+  "name": "RGF.Editor",
+  "rootNamespace": "RGF.Editor",
+  "references": [
+    "GUID:718ad2e03bc1456f8678c9f5a6f68bdc",
+    "GUID:23e4f4e9a0d14501b22ecbeefd4024ab"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

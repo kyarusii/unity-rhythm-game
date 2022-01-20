@@ -1,0 +1,19 @@
+{
+    "name": "EOS",
+    "rootNamespace": "",
+    "references": [
+        "GUID:984a391e66ec3d745bb9a6b588f88c39",
+        "GUID:0cd356c934590164a9ff46760009f345",
+        "GUID:14c9aa3764147684d86692a9134d7d74",
+        "GUID:61fc878ab891dd543bfcd474ceaebcff"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

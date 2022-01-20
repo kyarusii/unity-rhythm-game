@@ -1,0 +1,25 @@
+{
+  "name": "RGF.Game",
+  "rootNamespace": "RGF.Game",
+  "references": [
+    "GUID:14c9aa3764147684d86692a9134d7d74",
+    "GUID:560b04d1a97f54a4e82edc0cbbb69285",
+    "GUID:1885a375db0a07044ad42a64a1e2bf84",
+    "GUID:bb9ae1f4507f89c498c43329d26450ef",
+    "GUID:75469ad4d38634e559750d17036d5f7c",
+    "GUID:3290356123b9eaf43b18df17cbfad07c",
+    "GUID:f51ebe6a0ceec4240a699833d6309b23",
+    "GUID:acd6312653d6c374e8ccbc0f497dc13c",
+    "GUID:0cd356c934590164a9ff46760009f345",
+    "GUID:61fc878ab891dd543bfcd474ceaebcff"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7011605ee6124e99a937d59dd7ad8243, type: 3}
+  m_Name: DJMAX RESPECT PS4
+  m_EditorClassIdentifier: 
+  maxScore: 0
+  fever1Multiply: 1
+  fever2Multiply: 1.05
+  fever3Multiply: 1.1
+  fever4Multiply: 1.15
+  fever5Multiply: 1.2
+  judgeScores:
+  - type: 5
+    maxScore: 300000
+  - type: 4
+    maxScore: 15000
+  - type: 3
+    maxScore: 86000
+  - type: 2
+    maxScore: 3000

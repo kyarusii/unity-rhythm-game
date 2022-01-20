@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f87bbff6b002497f8096f40c02ff9606, type: 3}
+  m_Name: DJMAX RESPECT V
+  m_EditorClassIdentifier: 
+  maxScore: 350000
+  fever2Add: 200
+  fever3Add: 300
+  fever4Add: 400
+  fever5Add: 500

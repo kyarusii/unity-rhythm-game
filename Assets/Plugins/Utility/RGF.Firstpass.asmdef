@@ -1,0 +1,16 @@
+{
+    "name": "RGF.Firstpass",
+    "rootNamespace": "RGF.Firstpass",
+    "references": [
+        "GUID:0cd356c934590164a9ff46760009f345"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

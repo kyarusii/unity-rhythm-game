@@ -1,0 +1,107 @@
+﻿using System;
+
+namespace UniRx.Operators
+{
+	// Optimize for .Where().Select()
+
+	internal class WhereSelectObservable<T, TR> : OperatorObservableBase<TR>
+	{
+		private readonly Func<T, bool> predicate;
+		private readonly Func<T, TR> selector;
+		private readonly IObservable<T> source;
+
+		public WhereSelectObservable(IObservable<T> source, Func<T, bool> predicate, Func<T, TR> selector)
+			: base(source.IsRequiredSubscribeOnCurrentThread())
+		{
+			this.source = source;
+			this.predicate = predicate;
+			this.selector = selector;
+		}
+
+		protected override IDisposable SubscribeCore(IObserver<TR> observer, IDisposable cancel)
+		{
+			return source.Subscribe(new WhereSelect(this, observer, cancel));
+		}
+
+		private class WhereSelect : OperatorObserverBase<T, TR>
+		{
+			private readonly WhereSelectObservable<T, TR> parent;
+
+			public WhereSelect(WhereSelectObservable<T, TR> parent, IObserver<TR> observer, IDisposable cancel)
+				: base(observer, cancel)
+			{
+				this.parent = parent;
+			}
+
+			public override void OnNext(T value)
+			{
+				bool isPassed = false;
+				try
+				{
+					isPassed = parent.predicate(value);
+				}
+				catch (Exception ex)
+				{
+					try
+					{
+						observer.OnError(ex);
+					}
+					finally
+					{
+						Dispose();
+					}
+
+					return;
+				}
+
+				if (isPassed)
+				{
+					TR v = default(TR);
+					try
+					{
+						v = parent.selector(value);
+					}
+					catch (Exception ex)
+					{
+						try
+						{
+							observer.OnError(ex);
+						}
+						finally
+						{
+							Dispose();
+						}
+
+						return;
+					}
+
+					observer.OnNext(v);
+				}
+			}
+
+			public override void OnError(Exception error)
+			{
+				try
+				{
+					observer.OnError(error);
+				}
+				finally
+				{
+					Dispose();
+				}
+			}
+
+			public override void OnCompleted()
+			{
+				try
+				{
+					observer.OnCompleted();
+				}
+				finally
+				{
+					Dispose();
+				}
+			}
+		}
+	}
+}

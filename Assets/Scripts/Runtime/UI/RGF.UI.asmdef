@@ -1,0 +1,23 @@
+{
+  "name": "RGF.UI",
+  "rootNamespace": "RGF.Editor",
+  "references": [
+    "GUID:6055be8ebefd69e48b49212b09b47b2f",
+    "GUID:23e4f4e9a0d14501b22ecbeefd4024ab",
+    "GUID:14c9aa3764147684d86692a9134d7d74",
+    "GUID:1885a375db0a07044ad42a64a1e2bf84",
+    "GUID:560b04d1a97f54a4e82edc0cbbb69285",
+    "GUID:bb9ae1f4507f89c498c43329d26450ef",
+    "GUID:75469ad4d38634e559750d17036d5f7c",
+    "GUID:0cd356c934590164a9ff46760009f345"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
